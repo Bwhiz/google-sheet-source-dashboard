@@ -6,8 +6,9 @@ import plotly.express as px
 
 
 st.set_page_config(
-    layout = 'wide',
-  
+    page_title="Employee Dashboard",
+    page_icon="📊",
+    layout = 'wide'  
 )
 
 with open('style.css') as f:
