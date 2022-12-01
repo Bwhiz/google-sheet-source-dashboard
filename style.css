@@ -1,0 +1,16 @@
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+
+div[data-testid="metric-container"] {
+    background-color : rgba(28, 131, 225, 0.1);
+    border-radius: 25px;
+    padding: 5%;
+    border: 1px solid rgba(28, 131, 225, 0.1);
+}    
+label[data-testid = "stMetricLabel"] {
+    font-size: 20px;
+}
+
+div[data-testid="stMetricValue"] {
+    font-size: 1.8rem;
+}
