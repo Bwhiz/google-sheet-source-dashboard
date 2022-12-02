@@ -26,8 +26,7 @@ def run_query(query, connection):
     df = pd.read_sql(query,connection)
     return df
 # --------------------------------------------------------------
-#sheet_url = st.secrets["public_gsheets_url"]
-sheet_url = "https://docs.google.com/spreadsheets/d/1f-t8yPgWp2KRHRYHuZzo4mYQh1MsyslczPh7B3FFzGw/edit?usp=sharing"
+sheet_url = st.secrets["public_gsheets_url"]
 data = run_query(f"""select * from "{sheet_url}";""", conn)
 
 def human_format(num):
